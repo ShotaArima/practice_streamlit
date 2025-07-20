@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:python3.11-bookworm
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
