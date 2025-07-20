@@ -1,0 +1,11 @@
+services:
+  practice-streamlit:
+    build: .
+    volumes:
+      - ./src/:/app
+    tty: true
+    working_dir: /app/
+    ports:
+      - 8501:8501
+    command: uv run streamlit run app.py
+    
